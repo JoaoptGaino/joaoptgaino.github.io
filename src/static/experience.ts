@@ -2,32 +2,51 @@ import { ExperienceProps } from "@/types";
 
 export const experiences: ExperienceProps[] = [
   {
+    companyName: "Itau Unibanco",
+    position: "Software Engineer",
+    description:
+      "Development of BFFs, AWS serverless applications, and secure integrations for corporate banking post-sales systems.",
+    responsabilities: [
+      "Corporate banking, BFFs, and AWS:",
+      "Develop BFFs with Spring Boot and Angular for contract renegotiation eligibility, simulation, and execution workflows.",
+      "Modernize core applications on AWS using S3, EC2, Lambda, ECR, and API Gateway to improve scalability, reliability, and operational performance.",
+      "Build secure integrations for high-scale financial transactions and corporate banking processes.",
+      "Designed and implemented a new AWS serverless application from scratch, covering infrastructure, backend development, deployment, and scalability.",
+      "Reduced processing time by 30% while improving service availability for business-critical workflows.",
+    ],
+    from: "Oct 2024",
+    to: "Present",
+    skills:
+      "Java, Spring Boot, Angular, AWS S3, EC2, Lambda, ECR, API Gateway, Docker, CI/CD, Devin, Codex, Spec Driven Development",
+  },
+  {
     companyName: "Inmetrics",
     position: "Software Engineer",
     description:
-      "Development of web application using ReactJS, Back-end Microservices using Spring Boot and BFF Architecture implemented with NestJS",
+      "Development of marketplace microservices and integrations with Spring Boot, MongoDB, and RabbitMQ.",
     responsabilities: [
-      "Spring Boot Microservices and BFF NestJS:",
-      "Currently, I am working on microservices for orders, pricing, inventory, and product data. In this role, I use Spring Boot, MongoDB, and RabbitMQ. This work involves not only maintaining these systems but also continuously improving them to ensure optimal performance and user experience.",
-      "Worked in the planning and building of catalog for a marketplace, where Me and my team were able to facilitate operator's view on marketplace catalog;",
-      "Worked in the planning and building of data quality for a marketplace, where Me and my team able to assure the the customer wouldn't be offended by any unproper word;",
-      "Worked in the planning and building of the orders made by customers and facilitate the operator's view of the customer orders;",
+      "Marketplace microservices:",
+      "Built Spring Boot microservices for Livelo marketplace domains including travel, flights, hotels, vehicles, orders, pricing, inventory, and product catalog.",
+      "Developed services with MongoDB and RabbitMQ to support asynchronous processing, marketplace integrations, and high-scale request flows.",
+      "Migrated legacy services and improved throughput, reliability, and failure handling across production workloads.",
+      "Implemented data quality mechanisms to increase consistency across marketplace and order management processes.",
+      "Reduced manual effort by 40% in customer order workflows and supported millions of monthly requests with higher efficiency.",
     ],
     from: "Jun 2022",
-    to: "Present",
+    to: "Sep 2024",
     skills:
-      "ReactJS, NextJS, NodeJS, NestJS, Java, Spring Boot, OracleDB, PostgreSQL, MongoDB, Docker, RabbitMQ, Redis",
+      "Java, Spring Boot, NodeJS, NestJS, MongoDB, PostgreSQL, RabbitMQ, Redis, Docker, Microservices",
   },
   {
     companyName: "Eureka Labs",
-    position: "Full Stack Developer Junior",
+    position: "Junior Software Engineer",
     description:
-      "Development of web application using ReactJS and Back-end api using NodeJS frameworks, such as FeathersJS and NestJS.",
+      "Built ERP and Single Sign-On applications with NestJS, Prisma ORM, JWT, and authorization guards.",
     responsabilities: [
-      "Monolithic Architecture:",
-      "NestJS and PrismaORM:",
-      "Work in the planning and building of an ERP for a big transport company.",
-      "Work in the planning and building of a Single Sign On(SSO) application, where Me and My team were able to facilitate user's login in many applications and assure their safety in the system using JWT Token, Authentication and Authorization Guards.",
+      "ERP and SSO:",
+      "Built an ERP system for a large transport company using NestJS, Prisma ORM, and backend services for operational workflows.",
+      "Developed corporate Single Sign-On using JWT and authorization guards to centralize and secure authentication.",
+      "Aligned authentication flows with enterprise security standards and reduced login-related issues by 50%.",
     ],
     from: "Jan 2021",
     to: "Jun 2022",
@@ -35,10 +54,10 @@ export const experiences: ExperienceProps[] = [
       "ReactJS, NextJS, NodeJS, FeathersJS, NestJS, PrismaORM, PostgreSQL",
   },
   {
-    companyName: "Smart Inovações",
-    position: "Full Stack Developer Intern",
+    companyName: "SmarTI Inovacoes",
+    position: "Intern Software Engineer",
     description:
-      "Development of web pages using HTML, CSS, JavaScript and php. All together with MySQL database. Also developed desktop application using Visual Basic 6",
+      "Developed and maintained web pages using HTML, CSS, JavaScript, PHP, and MySQL.",
     from: "Jan 2020",
     to: "Nov 2020",
     skills: "HTML, CSS, JavaScript, PHP, MySQL, Visual Basic 6",

@@ -2,15 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 html {
   scroll-behavior: smooth;
   font-family: "Raleway", sans-serif;
 }
 
 @layer base {
+  :root {
+    --portfolio-green: #16a34a;
+    --portfolio-green-light: #4ade80;
+    --portfolio-bg: #f8fafc;
+    --portfolio-ink: #111827;
+  }
+
+  .dark {
+    --portfolio-bg: #0b0f14;
+    --portfolio-ink: #f8fafc;
+  }
+
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
+    @apply bg-slate-50 text-slate-900 tracking-wide transition-colors duration-300 dark:bg-[#0b0f14] dark:text-slate-100;
   }
 
   h1,
@@ -35,6 +46,16 @@ html {
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#00FF43] to-[#4EFF7C] text-white;
+    @apply rounded-xl bg-gradient-to-r from-emerald-600 to-green-400 text-white transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .section-eyebrow {
+    @apply text-xl tracking-widest uppercase text-emerald-600 font-bold dark:text-green-400;
+  }
+
+  .surface-card {
+    @apply border border-slate-200 bg-white shadow-lg shadow-slate-200 dark:border-slate-800 dark:bg-slate-900 dark:shadow-black;
   }
 }
