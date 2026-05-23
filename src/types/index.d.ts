@@ -36,6 +36,11 @@ interface GithubApiResponse {
   forks_count: number;
   language: string | null;
   html_url: string;
+  homepage?: string | null;
+  fork?: boolean;
+  archived?: boolean;
+  updated_at?: string;
+  pushed_at?: string;
 }
 interface GithubProjectProps {
   name: string;
@@ -43,6 +48,9 @@ interface GithubProjectProps {
   description: string | null;
   stars: number;
   url: string;
+  homepage?: string | null;
   language: string | null;
   forks: number;
+  updatedAt?: string;
+  featured?: boolean;
 }
