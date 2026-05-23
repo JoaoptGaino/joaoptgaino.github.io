@@ -12,10 +12,11 @@ const Contact = () => {
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    const form = event.currentTarget;
     setStatus("loading");
     setFeedback("");
 
-    const formData = new FormData(event.currentTarget);
+    const formData = new FormData(form);
     const payload = Object.fromEntries(formData.entries());
 
     try {
@@ -30,7 +31,7 @@ const Contact = () => {
         throw new Error(data.message || "Could not send your message.");
       }
 
-      event.currentTarget.reset();
+      form.reset();
       setStatus("success");
       setFeedback("Message sent. I will get back to you soon.");
     } catch (error) {
